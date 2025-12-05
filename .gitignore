@@ -1,0 +1,14 @@
+venv/
+.venv/
+output.png
+generated_logs.txt
+# Python cache / bytecode
+__pycache__/
+*.pyc
+
+# IDE specific files
+.vscode/
+
+#os specific files
+.DS_Store
+Thumbs.db
