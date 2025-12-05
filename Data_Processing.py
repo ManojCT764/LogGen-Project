@@ -131,6 +131,7 @@ def vizualize_trends(df):
         plt.grid(True)
         # show the plot
         plt.tight_layout()
+        plt.savefig("output.png")  # Save the plot as a PNG file
         plt.show()
     except Exception as e:
         logging.error(f"Error in visualize_trends: {e}")
@@ -140,7 +141,7 @@ log_filename = "generated_logs.txt" # Assumed that this file exists
 
 
 # Step 1: Write random logs to a file
-write_logs_to_file(log_filename, num_entries=200)
+write_logs_to_file(log_filename, num_entries=1000)
 
 # step 2: Load and process the logs
 df_logs = load_and_process_logs(log_filename)

@@ -1,0 +1,6 @@
+pandas
+numpy
+matplotlib
+# Optional extras used elsewhere in the project (kept here for convenience)
+requests
+beautifulsoup4
